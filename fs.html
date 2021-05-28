@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
 <body>
-  <div id="navbar"></div>
+ 
   <div class="center-content page-container">
     <div>
       <div class="progress" id="loader">
@@ -62,8 +62,8 @@
     async function run() {
       await  faceapi.loadFaceRecognitionModel()
       $('#loader').hide()
-      await onSelectionChanged(1, $('#selectList1 select').val())
-      await onSelectionChanged(2, $('#selectList2 select').val())
+      await onSelectionChanged(1,'https://res.cloudinary.com/dj330whg6/image/upload/v1622161872/it29qg0d6anahmt4urgz.jpg')
+      await onSelectionChanged(2, 'https://res.cloudinary.com/dj330whg6/image/upload/v1622117036/b6vkkf58e5343sczy56z.jpg')
       updateResult()
     }
 
